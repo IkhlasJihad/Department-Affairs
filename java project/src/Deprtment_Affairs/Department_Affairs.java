@@ -1,5 +1,4 @@
 package Deprtment_Affairs;
-
 import Models.Utility;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -26,6 +25,4 @@ public class Department_Affairs extends Application{
     public void stop(){
         Utility.DB.exit();
     }
-    
-    
 }
