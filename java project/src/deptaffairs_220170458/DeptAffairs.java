@@ -11,7 +11,7 @@ import javafx.stage.Stage;
  *
  * @author Ikhlas Jihad 
  */
-public class DeptAffairs_220170458 extends Application{
+public class DeptAffairs extends Application{
    
     public static void main(String[] args) {
        launch(args);
