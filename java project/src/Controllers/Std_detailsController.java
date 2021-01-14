@@ -90,7 +90,7 @@ public class Std_detailsController implements Initializable {
         }    
         else{
             //System.out.println("NO Image");
-            img.setImage(new Image("unknown.png"));
+            img.setImage(new Image("/views/unknown.png"));
             img.setFitHeight(180);
             img.setFitWidth(150);
         }    

@@ -83,7 +83,7 @@ public class InstDetailsController implements Initializable {
         }    
         else{
             //System.out.println("NO Image");
-            img.setImage(new Image("teacher.png"));
+            img.setImage(new Image("/views/teacher.png"));
             img.setFitHeight(180);
             img.setFitWidth(150);
         }

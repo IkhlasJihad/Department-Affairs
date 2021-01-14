@@ -1,5 +1,5 @@
 
-package deptaffairs_220170458;
+package Deprtment_Affairs;
 import Models.Utility;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,8 +11,7 @@ import javafx.stage.Stage;
  *
  * @author Ikhlas Jihad 
  */
-public class DeptAffairs_220170458 extends Application{
-   
+public class Department_Affairs extends Application{
     public static void main(String[] args) {
        launch(args);
     }
@@ -23,7 +22,6 @@ public class DeptAffairs_220170458 extends Application{
         stage.setScene(new Scene(root,600,385));
         stage.setResizable(false);
         stage.setTitle("Department Affairs");        
-        stage.getIcons().add(new Image("icon.png" ));
         stage.show();        
     }
     @Override
