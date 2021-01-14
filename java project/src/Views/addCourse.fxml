@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #5dabe7;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Controllers.AddCourseController">
+   <children>
+      <Label layoutX="202.0" layoutY="54.0" text="Add Course" textFill="#f8f8f8">
+         <font>
+            <Font name="Cooper Black" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="close" layoutX="391.0" layoutY="197.0" mnemonicParsing="false" onAction="#nav_back" prefHeight="34.0" prefWidth="67.0" style="-fx-background-color: #150734;" text="Close" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="add" layoutX="391.0" layoutY="151.0" mnemonicParsing="false" onAction="#addCourse" prefHeight="34.0" prefWidth="67.0" style="-fx-background-color: #150734;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="id" layoutX="152.0" layoutY="130.0" opacity="0.8" promptText="Course ID" style="-fx-background-color: #f1f2f8;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="title" layoutX="154.0" layoutY="173.0" opacity="0.8" promptText="Title" style="-fx-background-color: #f1f2f8;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cred" layoutX="154.0" layoutY="219.0" opacity="0.8" promptText="Credits" style="-fx-background-color: #f1f2f8;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="label_out" layoutX="121.0" layoutY="320.0" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #5dabe7;" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

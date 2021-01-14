@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="385.0" prefWidth="600.0" style="-fx-background-color: #63bce5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddInstructorController">
+   <children>
+      <Label layoutX="181.0" layoutY="38.0" text="Add Instructor">
+         <font>
+            <Font name="Segoe UI Black" size="33.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4722222222222222" centerY="1.0" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#3b548a" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="close" layoutX="387.0" layoutY="196.0" mnemonicParsing="false" onAction="#nav_back" prefHeight="34.0" prefWidth="67.0" style="-fx-background-color: #0f2557;" text="Close" textFill="#00e9ff">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="add" layoutX="387.0" layoutY="145.0" mnemonicParsing="false" onAction="#addInst" prefHeight="34.0" prefWidth="67.0" style="-fx-background-color: #0f2557;" text="Add" textFill="#00e9ff">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="name" layoutX="129.0" layoutY="117.0" opacity="0.8" prefHeight="37.0" prefWidth="190.0" promptText="Name" style="-fx-background-color: #f1f2f8;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="salary" layoutX="129.0" layoutY="169.0" opacity="0.8" prefHeight="37.0" prefWidth="190.0" promptText="Salary" style="-fx-background-color: #f1f2f8;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="pic" layoutX="129.0" layoutY="217.0" onMouseClicked="#browsePic" opacity="0.8" prefHeight="37.0" prefWidth="190.0" promptText="Picture" style="-fx-background-color: #f1f2f8;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="label_out" layoutX="10.0" layoutY="269.0" prefHeight="114.0" prefWidth="574.0" style="-fx-background-color: #63bce5;" textFill="#05011b">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

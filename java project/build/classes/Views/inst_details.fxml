@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #63bce5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.InstDetailsController">
+   <children>
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="180.0" layoutX="364.0" layoutY="144.0" onMouseClicked="#handleImg" onMouseMoved="#playToolTip" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="id" layoutX="106.0" layoutY="154.0" opacity="0.8" promptText="ID" style="-fx-background-color: #f1f2f8;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="name" layoutX="106.0" layoutY="197.0" opacity="0.8" promptText="Name" style="-fx-background-color: #f1f2f8;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="salary" layoutX="106.0" layoutY="279.0" opacity="0.8" promptText="Salary" style="-fx-background-color: #f1f2f8;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="back" layoutX="492.0" layoutY="341.0" mnemonicParsing="false" onAction="#nav_back" prefHeight="34.0" prefWidth="67.0" style="-fx-background-color: #4efa5a;" text="Back" textFill="#1919ff">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="deptCombo" cache="true" layoutX="106.0" layoutY="237.0" opacity="0.8" prefHeight="34.0" prefWidth="175.0" style="-fx-background-color: #f1f2f8;" />
+      <Button fx:id="save" layoutX="413.0" layoutY="341.0" mnemonicParsing="false" onAction="#on_save_btn" prefHeight="34.0" prefWidth="67.0" style="-fx-background-color: #4efa5a;" text="Save" textFill="#1919ff">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="label_out" layoutX="110.0" layoutY="340.0" prefHeight="37.0" prefWidth="168.0" />
+      <AnchorPane id="AnchorPane" fx:id="d_root" layoutX="95.0" layoutY="232.0" prefHeight="90.0" prefWidth="440.0" visible="false">
+         <children>
+            <DialogPane fx:id="dialoge" contentText="               Do you want to save the changes you made ?" focusTraversable="true" headerText="   DeptAffairs" onMouseClicked="#select" opacity="0.83" prefHeight="90.0" prefWidth="440.0" style="-fx-background-color: #ddedf4;">
+               <buttonTypes>
+                  <ButtonType fx:constant="NO" />
+                  <ButtonType fx:constant="YES" />
+               </buttonTypes>
+            </DialogPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="196.0" layoutY="66.0" text="Instructor">
+         <font>
+            <Font name="Segoe UI Black" size="33.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4722222222222222" centerY="1.0" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#3b548a" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="delete" layoutX="316.0" layoutY="341.0" mnemonicParsing="false" onAction="#on_delete_btn" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: #4efa5a;" text="Delete" textFill="#1919ff">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane id="AnchorPane" fx:id="delete_root" layoutX="117.0" layoutY="180.0" opacity="0.9" prefHeight="105.0" prefWidth="408.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <DialogPane fx:id="delet_dialoge" contentText="               Are You Sure ?" focusTraversable="true" headerText="   Delete" layoutX="14.0" layoutY="6.0" onMouseClicked="#select" opacity="0.9" prefHeight="95.0" prefWidth="373.0" style="-fx-background-color: white;">
+               <buttonTypes>
+                  <ButtonType fx:id="del_no" fx:constant="NO" />
+                  <ButtonType fx:id="del_yes" fx:constant="YES" />
+               </buttonTypes>
+            </DialogPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

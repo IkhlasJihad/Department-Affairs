@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="385.0" prefWidth="580.0" style="-fx-background-color: #7edfea;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddstdController">
+   <children>
+      <Label layoutX="201.0" layoutY="50.0" text="Add Student">
+         <font>
+            <Font name="Forte" size="33.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4722222222222222" centerY="1.0" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#1a1aff" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="close" layoutX="366.0" layoutY="203.0" mnemonicParsing="false" onAction="#nav_back" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: #4efa5a;" text="Close" textFill="#1919ff">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="add" layoutX="366.0" layoutY="146.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: #4efa5a;" text="Add" textFill="#1919ff">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="name" layoutX="136.0" layoutY="131.0" opacity="0.8" prefHeight="37.0" prefWidth="188.0" promptText="Name" style="-fx-background-color: #f1f2f8;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cred" layoutX="136.0" layoutY="177.0" opacity="0.8" prefHeight="37.0" prefWidth="188.0" promptText="Credits" style="-fx-background-color: #f1f2f8;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="pic" layoutX="136.0" layoutY="225.0" onMouseClicked="#browsePic" opacity="0.8" prefHeight="37.0" prefWidth="188.0" promptText="Picture" style="-fx-background-color: #f1f2f8;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="label_out" layoutX="90.0" layoutY="305.0" prefHeight="68.0" prefWidth="400.0" style="-fx-background-color: #7edfea;" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="276.0" text="please, Don't leave Name field empty">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4722222222222222" centerY="1.0" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#1a1aff" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
